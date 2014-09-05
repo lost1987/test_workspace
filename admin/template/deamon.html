@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<table>
+    <tr><td>process</td><td>pid</td><td>op</td></tr>
+{#foreach from=$deamons item=deamon #}
+   <tr><td>{#$deamon.name#}</td><td>{#$deamon.pid#}</td><td><a href="#" >启动|停止</a></td></tr>
+{#/foreach#}
+</table>
+</body>
+</html>
